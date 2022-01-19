@@ -37,5 +37,8 @@ Some common Protocols are
  IP address is a unique address of the modem (provided by your Internet service provider) called **Global IP** .
  You can check your computer *IP address* using ``` curl ifconfig.me -s ``` in your command line interface. 
  Everything that can communicate online has an IP address. There can be multiple devices connected to the modem.
- Modem will give IP address to each of device which is connected to that mode. using DHCP (Dynamic Host Configration Protocal).
+ Modem will give IP address to each of device which is connected to that modem, using DHCP (Dynamic Host Configration Protocal).
+ 
+ How we will get the searched file in laymans term. 
+ Device Made a request, it will go to the router. From router --> Inter Service Provider --> Internet
  
