@@ -39,7 +39,9 @@ This is used by ***World Wide Web***.
     we can go from one page to second, second to third and so on.
  
  Following protocols, we have established a communication system. Computers send messages to one another. (These messages are made up of ones and zeros, bits). However, instead of sending the whole message (that could be more than trillion bits) at once, information/message is broken down into smaller units called ***Packets***
- Now, Packet is ready for sending and packet(smaller unit of message) has to be addressed to a certain application on a certain end system. So, here comes the role of **Addressing**. 
+ Now, Packet is ready for sending and packet(smaller unit of message) has to be addressed to a certain application on a certain end system (Devices connected to Internet also called as Edge Systems like Mobile Phone, Desktop Computers etc). So, here comes the role of **Addressing**. 
+ 
+ One more thing to mention here is ***Network Edge*** which is collection of end systems. Note, devices that relay messages like router are not part of Network Edge.
  
  ### ***IP Address***
  Every device that is connected to the Internet has an address called an ‘IP
@@ -55,3 +57,11 @@ using DHCP (Dynamic Host Configration Protocal). Each device can have lot of app
  
  From ***Router --> Inter Service Provider --> Internet***
  
+Data needs to be transmitted from one end system to another over a medium. 
+There are two kinds of media
+ - Guided
+ - Unguided
+1- Guided: A medium in which the signal is transported on a
+defined pathway is called guided like Fibre Optics
+2- Unguided: Means of transmission that are not bound by a confined pathway are called
+unguided media, such as radio waves.
