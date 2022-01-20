@@ -37,10 +37,9 @@ It is the rule via which your data is being transferred between a client and ser
 This is used by ***World Wide Web***.
   - World Wide Web is collection of all the information/pages/documents which are interlinked meaning 
     we can go from one page to second, second to third and so on.
-    
-  
-  You may have a doubt that how one computer determine that this is the computer to which I was sending data.
-  So, here comes the role of **IP addresses**. 
+ 
+ Following protocols, we have established a communication system. Computers send messages to one another. (These messages are made up of ones and zeros, bits). However, instead of sending the whole message (that could be more than trillion bits) at once, information/message is broken down into smaller units called ***Packets***
+ Now, Packet is ready for sending and packet(smaller unit of message) has to be addressed to a certain application on a certain end system. So, here comes the role of **Addressing**. 
  
  ### ***IP Address***
  Every device that is connected to the Internet has an address called an ‘IP
@@ -48,8 +47,11 @@ Address’ which is much like a mailing address means a
 unique address of the modem (provided by your Internet service provider) called **Global IP** .
 You can check your computer *IP address* using ``` curl ifconfig.me -s ``` in your command line interface. 
 There can be multiple devices connected to the modem. Modem will give IP address to each of device which is connected to that modem,
-using DHCP (Dynamic Host Configration Protocal).
+using DHCP (Dynamic Host Configration Protocal). Each device can have lot of applications, so exactly which application is requesting the data is determined by ***PORTS***
+<h3 align="center"> IP addresses identify end systems but ports identify an application on the end system </h3>
  
  How we will get the searched file in laymans term. 
- Device Made a request, it will go to the router. From router --> Inter Service Provider --> Internet
+ Device Made a request, it will go to the router.
+ 
+ From ***Router --> Inter Service Provider --> Internet***
  
