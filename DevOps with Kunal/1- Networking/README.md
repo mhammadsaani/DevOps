@@ -65,3 +65,23 @@ There are two kinds of media
 defined pathway is called guided like Fibre Optics
 2- Unguided: Means of transmission that are not bound by a confined pathway are called
 unguided media, such as radio waves.
+
+Now before we go further into technical details lets reviw about data trasmission over network and the network types
+how is data transfered?(a brief overview)
+>> when u send a wattsapp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks
+ur data is transfered into segments, packates and frames(you will learn more about it in detail ). same thing happens when u load a webpage
+individual calls are made for each "chunk" of data.
+every device that can be connected has an IP address.An IP address is in the form of X.X.X.X. each X can contain 0-255 no.s. this address
+will tell the internet to where send and recieve a data ur "good morning" message will be sent to ur friend only if the internet know which IP adress
+he/she has. But wait? how does the internet knows which application to send to ? it is not like u send a wattsapp message and it has sent in
+your friend email,is it? for that thier is port no.s which tells which application this "good morning" message has to be sent.Ports are 16 bit
+no.s and some are already reserved. forexample:- port no. 80 is reservedd for http.
+now this is one final problem , the problem of sequence. when u send "good morning" why doesnt the data is tranfered as "morning gdoo", how
+does the sequence of those data packets is mainted? the answer is sequence no.s. they maintain the sequence of those data packets to be transferred
+so there is a simple overview of how your simple mesasage in form of data is tranferred form one computer to another.
+u will learn more in detail when u will study network models like OSI model and TCP/IP model.
+
+
+But wait now u know how does data travels in this "network" thing but what exactly is a computer network who are these connected with wires?
+the ansawer is CABLES, CABLES , CABLES everyone is connected with cables around the globe.checkout the website submarinecable.com.
+Now lets talk about how this network is arranged there are basicly three type of network connection LAN, MAN and WAN , which are explained below:-
