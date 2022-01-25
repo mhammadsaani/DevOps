@@ -8,10 +8,10 @@ these different groups(network of computers) are connected and are termed as Int
 
 
 ### ***Protocols***
-A set of rules governing the exchange or transmission of data between devices Or
-The rules for exchange of data are called ***Protocols*** . 
+A set of rules governing the exchange or transmission of data between devices or
+the rules for exchange of data are called ***Protocols*** . 
 Here a question may arise in your mind, why we need protocols?. If yes, then here is the **answer**. 
-Suppose, you made an application and set some rules for communicating this application with other application but some other person made other rules for communicating.
+Suppose, you made an application and set some rules for the communication with other applications, but some other person made other rules for communicating.
 So, due to this issue, communication is not feasible. Therefore, a set of standerd rules is important to have, which is written by 
 [***Internet Society Organization***](https://www.internetsociety.org/learning/?gclid=CjwKCAiA55mPBhBOEiwANmzoQollWESh4rtBH7KNA-VvlJ5_f0RZ4ukLkznK23Y2R-RWM4DOYvlT8BoCj10QAvD_BwE).
 
