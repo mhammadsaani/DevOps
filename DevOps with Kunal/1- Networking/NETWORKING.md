@@ -22,12 +22,12 @@ Some common Protocols are
  
  ### ***TCP***
  The Transmission Control Protocol is a protocol that ensures that **100%** of data reaches the intended destination and
-is not corrupted along the way
+is not corrupted along the way.
 So, if you want a person to get something completely, then you are going to use this protocol.
  
  ### ***UDP*** 
- User Datagram Protocol (UDP) does not ensure that data reaches the destination or not and that it remains incorrupt.
- When you do not care if **100%** data is reaching to your friend or not, you use UDP like in case of **Video Conferencing**.
+ User Datagram Protocol (UDP) does not ensure that data reaches the destination, and that it remains incorrupt.
+ When it doesn't matter whether **100%** data is reaching to the intended user, you use UDP like in case of **Video Conferencing**.
  
  ### ***HTTP***
 HyperText Transfer Protocol (HTTP) is a web protocol that defines the
