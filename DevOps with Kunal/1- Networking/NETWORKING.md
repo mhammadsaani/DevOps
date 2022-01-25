@@ -31,14 +31,14 @@ So, if you want a person to get something completely, then you are going to use 
  
  ### ***HTTP***
 HyperText Transfer Protocol (HTTP) is a web protocol that defines the
-format of messages to be exchanged between web clients, e.g., web browsers
-and web servers and what action is to be taken in response to the message. Or in other terms,
-It is the rule via which your data is being transferred between a client and server.
+format of messages to be exchanged between the web clients. e.g., web browsers
+and web servers and what action is to be taken in response to the message, or in other terms,
+It is the rule by which your data is being transferred between a client and server.
 This is used by ***World Wide Web***.
-  - World Wide Web is collection of all the information/pages/documents which are interlinked meaning 
+  - World Wide Web is collection of all the information/pages/documents which are interlinked, meaning 
     we can go from one page to second, second to third and so on.
  
- Following protocols, we have established a communication system. Computers send messages to one another. (These messages are made up of ones and zeros, bits). However, instead of sending the whole message (that could be more than trillion bits) at once, information/message is broken down into smaller units called ***Packets***
+ With the following protocols, we have established a communication system. Computer send messages to one another. (These messages are made up of ones and zeros, bits). However, instead of sending the whole message (that could be more than trillion's of bits) at once, information/message is broken down into smaller units called ***Packets***
  Now, Packet is ready for sending and packet(smaller unit of message) has to be addressed to a certain application on a certain end system (Devices connected to Internet also called as Edge Systems like Mobile Phone, Desktop Computers etc). So, here comes the role of **Addressing**. 
  
  One more thing to mention here is ***Network Edge*** which is collection of end systems. Note, devices that relay messages like router are not part of Network Edge.
