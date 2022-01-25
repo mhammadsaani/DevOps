@@ -61,23 +61,24 @@ Data needs to be transmitted from one end system to another over a medium.
 There are two kinds of media
  - Guided
  - Unguided
+ 
 1- Guided: A medium in which the signal is transported on a
-defined pathway is called guided like Fibre Optics
+defined pathway is called guided, like Fibre Optics.
+
 2- Unguided: Means of transmission that are not bound by a confined pathway are called
 unguided media, such as radio waves.
 
-Now before we go further into technical details lets review about data transmission over network and the network types
+Now before we go further into technical details, lets review about data transmission over network and the network types
 how is data transfered?(a brief overview)
->> when u send a WhatsApp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks
-ur data is transferred into segments, packets and frames(you will learn more about it in detail ). same thing happens when u load a webpage
+>> When you send a WhatsApp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks.
+Your data is transferred into segments, packets and frames(you will learn more about it in detail ). Same thing happens when you load a webpage,
 individual calls are made for each "chunk" of data.
-Every device that can be connected has an IP address.An IP address is in the form of X.X.X.X. each X can contain 0-255 no.s. this address
-will tell the internet to where send and receive a data ur "good morning" message will be sent to ur friend only if the internet know which IP adress
-he/she has. But wait? how does the internet knows which application to send to ? it is not like u send a wattsapp message and it has sent in
-your friend email,is it? for that thier is port no.s which tells which application this "good morning" message has to be sent.Ports are 16 bit
+Every device that can be connected has an IP address. An IP address is in the form of X.X.X.X. each X can contain 0-255 no.s. this tells the internet, to where send and receive the data. Your "good morning" message will be sent to your friend only if the internet know which IP address
+he/she has. But wait? how does the internet knows which application to send to ? it is not like you send a whatsapp message and it has sent in
+your friend email,is it? for that there are port numbers, which tells which application this "good morning" message has to be sent.Ports are 16 bit
 no.s and some are already reserved. forexample:- port no. 80 is reserved for http.
-now this is one final problem , the problem of sequence. when u send "good morning" why doesnt the data is tranfered as "morning gdoo", how
-does the sequence of those data packets is mainted? the answer is sequence no.s. they maintain the sequence of those data packets to be transferred
+Now this is one final problem , the problem of sequence. when you send "good morning" why doesnt the data is tranfered as "morning gdoo", how
+does the sequence of those data packets is maintained? the answer is sequence no.s. they maintain the sequence of those data packets to be transferred.
 So there it is a simple overview of how your simple message in form of data is transferred form one computer to another.
 You will learn more in detail when u will study network models like OSI model and TCP/IP model.
 
