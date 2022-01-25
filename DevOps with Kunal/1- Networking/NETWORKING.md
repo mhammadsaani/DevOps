@@ -3,14 +3,14 @@
 <h3 align="center"> The Internet: A Network of Networks </h3>
 
 ### Computer Network & Internet
-In simple term (layman term), computer network means computer connected to each other with cables or wireless radio and a sort of group of computers is formed and 
-these different groups(network of computers) are connected and are termed as Internet(a network of computer networks) .
+In simple terms (layman term), computer network means computers connected to each other with cables or wireless radio and a sort of group of computers is formed and 
+these different groups(network of computers) are connected and are termed as the Internet(a network of computer networks) .
 
 
 ### ***Protocols***
 A set of rules governing the exchange or transmission of data between devices or
 the rules for exchange of data are called ***Protocols*** . 
-Here a question may arise in your mind, why we need protocols?. If yes, then here is the **answer**. 
+Here a question may arise in your mind, why do we need protocols?. If yes, then here is the **answer**. 
 Suppose, you made an application and set some rules for the communication with other applications, but some other person made other rules for communicating.
 So, due to this issue, communication is not feasible. Therefore, a set of standerd rules is important to have, which is written by 
 [***Internet Society Organization***](https://www.internetsociety.org/learning/?gclid=CjwKCAiA55mPBhBOEiwANmzoQollWESh4rtBH7KNA-VvlJ5_f0RZ4ukLkznK23Y2R-RWM4DOYvlT8BoCj10QAvD_BwE).
@@ -18,7 +18,7 @@ So, due to this issue, communication is not feasible. Therefore, a set of stande
 Some common Protocols are 
  - TCP (Transmission Control Protocol)
  - UDP (User Datagram Protocol)
- - HTTP (Hyper Text Transfer Protocol)
+ - HTTP (HyperText Transfer Protocol)
  
  ### ***TCP***
  The Transmission Control Protocol is a protocol that ensures that **100%** of data reaches the intended destination and
@@ -66,19 +66,19 @@ defined pathway is called guided like Fibre Optics
 2- Unguided: Means of transmission that are not bound by a confined pathway are called
 unguided media, such as radio waves.
 
-Now before we go further into technical details lets reviw about data trasmission over network and the network types
+Now before we go further into technical details lets review about data transmission over network and the network types
 how is data transfered?(a brief overview)
->> when u send a wattsapp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks
-ur data is transfered into segments, packates and frames(you will learn more about it in detail ). same thing happens when u load a webpage
+>> when u send a WhatsApp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks
+ur data is transferred into segments, packets and frames(you will learn more about it in detail ). same thing happens when u load a webpage
 individual calls are made for each "chunk" of data.
 Every device that can be connected has an IP address.An IP address is in the form of X.X.X.X. each X can contain 0-255 no.s. this address
-will tell the internet to where send and recieve a data ur "good morning" message will be sent to ur friend only if the internet know which IP adress
+will tell the internet to where send and receive a data ur "good morning" message will be sent to ur friend only if the internet know which IP adress
 he/she has. But wait? how does the internet knows which application to send to ? it is not like u send a wattsapp message and it has sent in
 your friend email,is it? for that thier is port no.s which tells which application this "good morning" message has to be sent.Ports are 16 bit
-no.s and some are already reserved. forexample:- port no. 80 is reservedd for http.
+no.s and some are already reserved. forexample:- port no. 80 is reserved for http.
 now this is one final problem , the problem of sequence. when u send "good morning" why doesnt the data is tranfered as "morning gdoo", how
 does the sequence of those data packets is mainted? the answer is sequence no.s. they maintain the sequence of those data packets to be transferred
-So there it is a simple overview of how your simple mesasage in form of data is tranferred form one computer to another.
+So there it is a simple overview of how your simple message in form of data is transferred form one computer to another.
 You will learn more in detail when u will study network models like OSI model and TCP/IP model.
 
 
@@ -86,16 +86,16 @@ But wait now u know how does data travels in this "network" thing but what exact
 the ansawer is CABLES, CABLES , CABLES everyone is connected with cables around the globe.checkout the website submarinecable.com .
 Now lets talk about how this network is arranged there are basicly three type of network connection LAN, MAN and WAN , which are explained below:-
 ### Local Area Network(LAN)
-It is a computer network  that links devices within a building or group of adjacent buildings, especially one with a radius of less than 1 km.house are network(HAN) and personal area network(PAN) comes under this category.
+It is a computer network  that links devices within a building or group of adjacent buildings, especially one with a radius of less than 1 km. house is network(HAN) and personal area network(PAN) come under this category.
  
-### Metropolatian Area Network(MAN)
+### Metropolitan Area Network(MAN)
 A metropolitan area network (MAN) is a computer network that connects computers within a metropolitan area, which could be a single large city, multiple cities and towns, or   any given large area with multiple buildings. It generally ranges from 5 to 50 km.
 
 ### Wide Area Network(WAN)
 A wide area network ( WAN) is a telecommunications network that extends over a large geographical area for the primary purpose of computer networking.
-A good example of wide area network is the aiertel.
+A good example of wide area network is the airtel.
 And the internet is a collection of all these networks.
-However there is one special kind of network which we have not reviewed yet and it is called Vitual Private Network(VPN)
+However there is one special kind of network which we have not reviewed yet and it is called Virtual Private Network(VPN)
 
 VPN (Virtual Private Network) : VPN or the Virtual Private Network is a private WAN
 (Wide Area Network) built on the internet. It allows the creation of a secured tunnel
@@ -139,10 +139,10 @@ the data to all the attached devices.
 or more nodes and thus, forming a single continuous path for the transmission.
 2. It does not need any central server to control the connectivity among the nodes.
 3. If the single node is damaged, then the whole network fails.
-4. Ring topology is very rarely used as it is expensive, difficult to install andmanage.
+4. Ring topology is very rarely used as it is expensive, difficult to install and manage.
 5. Examples of Ring topology are SONET network, SDH network, etc
 ### Star :
-1. Star topology is a network topology in which all the nodes are connectedto a single device known as a central device.
+1. Star topology is a network topology in which all the nodes are connected to a single device known as a central device.
 2. Star topology requires more cable compared to other topologies.
 Therefore, it is more robust as a failure in one cable will only disconnect aspecific computer connected to this cable.
 3. If the central device is damaged, then the whole network fails.
@@ -152,21 +152,21 @@ Therefore, it is more robust as a failure in one cable will only disconnect aspe
 2. In tree topology, all the star networks are connected to a single bus.
 3. Ethernet protocol is used in this topology.
 4. In this, the whole network is divided into segments known as star networks whichcan be easily maintained. If one segment is damaged, there is no effect on othersegments.
-5. Tree topology depends on the "main bus," and if it breaks, then the wholenetwork gets damaged.
+5. Tree topology depends on the "main bus," and if it breaks, then the whole network gets damaged.
 ### Mesh :
-1. Mesh topology is a network topology in which all the nodes are individuallyconnected to other nodes.
-2. It does not need any central switch or hub to control the connectivity among thenodes.
+1. Mesh topology is a network topology in which all the nodes are individually connected to other nodes.
+2. It does not need any central switch or hub to control the connectivity among the nodes.
 3. Mesh topology is categorized into two parts: 
  Fully connected mesh topology:
 In this topology, all the nodes are connected to each other.
  Partially connected
 mesh topology: In this topology, all the nodes are not connected to each other.
-4. It is robust as a failure in one cable will only disconnect the specified computerconnected to this cable.
-5. Mesh topology is rarely used as installation and configuration are difficult whenconnectivity gets more.
+4. It is robust as a failure in one cable will only disconnect the specified computer connected to this cable.
+5. Mesh topology is rarely used as installation and configuration are difficult when connectivity gets more.
 6. Cabling cost is high as it requires bulk wiring.
 #### Hybrid :
-1. A hybrid topology is a combination of different topologies to form a resultingtopology.
-2. If star topology is connected with another star topology, then it remains a startopology. If star topology is connected with different topology, then it becomes Hybrid topology.
+1. A hybrid topology is a combination of different topologies to form a resulting topology.
+2. If star topology is connected with another star topology, then it remains a star topology. If star topology is connected with different topology, then it becomes Hybrid topology.
 3. It provides flexibility as it can be implemented in a different network environment.
 
  ### OSI Model(Open System Interconnections) (Imp) : 
