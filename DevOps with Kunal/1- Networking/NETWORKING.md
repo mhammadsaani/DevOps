@@ -45,10 +45,10 @@ This is used by ***World Wide Web***.
  
  ### ***IP Address***
  Every device that is connected to the Internet has an address called an ‘IP
-Address’ which is much like a mailing address means a 
+Address’ which is much like a mailing address, means a 
 unique address of the modem (provided by your Internet service provider) called **Global IP** .
 You can check your computer *IP address* using ``` curl ifconfig.me -s ``` in your command line interface. 
-There can be multiple devices connected to the modem. Modem will give IP address to each of device which is connected to that modem,
+There can be multiple devices connected to the modem. Modem will provide IP address to each of the devices connected to that modem,
 using DHCP (Dynamic Host Configration Protocal). Each device can have lot of applications, so exactly which application is requesting the data is determined by ***PORTS***
 <h3 align="center"> IP addresses identify end systems but ports identify an application on the end system </h3>
  
