@@ -22,33 +22,33 @@ Some common Protocols are
  
  ### ***TCP***
  The Transmission Control Protocol is a protocol that ensures that **100%** of data reaches the intended destination and
-is not corrupted along the way
+is not corrupted along the way.
 So, if you want a person to get something completely, then you are going to use this protocol.
  
  ### ***UDP*** 
- User Datagram Protocol (UDP) does not ensure that data reaches the destination or not and that it remains incorrupt.
- When you do not care if **100%** data is reaching to your friend or not, you use UDP like in case of **Video Conferencing**.
+ User Datagram Protocol (UDP) does not ensure that data reaches the destination, and that it remains incorrupt.
+ When it doesn't matter whether **100%** data is reaching to the intended user, you use UDP like in case of **Video Conferencing**.
  
  ### ***HTTP***
 HyperText Transfer Protocol (HTTP) is a web protocol that defines the
-format of messages to be exchanged between web clients, e.g., web browsers
-and web servers and what action is to be taken in response to the message. Or in other terms,
-It is the rule via which your data is being transferred between a client and server.
+format of messages to be exchanged between the web clients. e.g., web browsers
+and web servers and what action is to be taken in response to the message, or in other terms,
+It is the rule by which your data is being transferred between a client and server.
 This is used by ***World Wide Web***.
-  - World Wide Web is collection of all the information/pages/documents which are interlinked meaning 
+  - World Wide Web is collection of all the information/pages/documents which are interlinked, meaning 
     we can go from one page to second, second to third and so on.
  
- Following protocols, we have established a communication system. Computers send messages to one another. (These messages are made up of ones and zeros, bits). However, instead of sending the whole message (that could be more than trillion bits) at once, information/message is broken down into smaller units called ***Packets***
+ With the following protocols, we have established a communication system. Computer send messages to one another. (These messages are made up of ones and zeros, bits). However, instead of sending the whole message (that could be more than trillion's of bits) at once, information/message is broken down into smaller units called ***Packets***
  Now, Packet is ready for sending and packet(smaller unit of message) has to be addressed to a certain application on a certain end system (Devices connected to Internet also called as Edge Systems like Mobile Phone, Desktop Computers etc). So, here comes the role of **Addressing**. 
  
  One more thing to mention here is ***Network Edge*** which is collection of end systems. Note, devices that relay messages like router are not part of Network Edge.
  
  ### ***IP Address***
  Every device that is connected to the Internet has an address called an ‘IP
-Address’ which is much like a mailing address means a 
+Address’ which is much like a mailing address, means a 
 unique address of the modem (provided by your Internet service provider) called **Global IP** .
 You can check your computer *IP address* using ``` curl ifconfig.me -s ``` in your command line interface. 
-There can be multiple devices connected to the modem. Modem will give IP address to each of device which is connected to that modem,
+There can be multiple devices connected to the modem. Modem will provide IP address to each of the devices connected to that modem,
 using DHCP (Dynamic Host Configration Protocal). Each device can have lot of applications, so exactly which application is requesting the data is determined by ***PORTS***
 <h3 align="center"> IP addresses identify end systems but ports identify an application on the end system </h3>
  
@@ -61,38 +61,39 @@ Data needs to be transmitted from one end system to another over a medium.
 There are two kinds of media
  - Guided
  - Unguided
+ 
 1- Guided: A medium in which the signal is transported on a
-defined pathway is called guided like Fibre Optics
+defined pathway is called guided, like Fibre Optics.
+
 2- Unguided: Means of transmission that are not bound by a confined pathway are called
 unguided media, such as radio waves.
 
-Now before we go further into technical details lets review about data transmission over network and the network types
+Now before we go further into technical details, lets review about data transmission over network and the network types
 how is data transfered?(a brief overview)
->> when u send a WhatsApp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks
-ur data is transferred into segments, packets and frames(you will learn more about it in detail ). same thing happens when u load a webpage
+>> When you send a WhatsApp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks.
+Your data is transferred into segments, packets and frames(you will learn more about it in detail ). Same thing happens when you load a webpage,
 individual calls are made for each "chunk" of data.
-Every device that can be connected has an IP address.An IP address is in the form of X.X.X.X. each X can contain 0-255 no.s. this address
-will tell the internet to where send and receive a data ur "good morning" message will be sent to ur friend only if the internet know which IP adress
-he/she has. But wait? how does the internet knows which application to send to ? it is not like u send a wattsapp message and it has sent in
-your friend email,is it? for that thier is port no.s which tells which application this "good morning" message has to be sent.Ports are 16 bit
+Every device that can be connected has an IP address. An IP address is in the form of X.X.X.X. each X can contain 0-255 no.s. this tells the internet, to where send and receive the data. Your "good morning" message will be sent to your friend only if the internet know which IP address
+he/she has. But wait? how does the internet knows which application to send to ? it is not like you send a whatsapp message and it has sent in
+your friend email,is it? for that there are port numbers, which tells which application this "good morning" message has to be sent.Ports are 16 bit
 no.s and some are already reserved. forexample:- port no. 80 is reserved for http.
-now this is one final problem , the problem of sequence. when u send "good morning" why doesnt the data is tranfered as "morning gdoo", how
-does the sequence of those data packets is mainted? the answer is sequence no.s. they maintain the sequence of those data packets to be transferred
+Now this is one final problem , the problem of sequence. when you send "good morning" why doesnt the data is tranfered as "morning gdoo", how
+does the sequence of those data packets is maintained? the answer is sequence no.s. they maintain the sequence of those data packets to be transferred.
 So there it is a simple overview of how your simple message in form of data is transferred form one computer to another.
 You will learn more in detail when u will study network models like OSI model and TCP/IP model.
 
 
-But wait now u know how does data travels in this "network" thing but what exactly is a computer network who are these connected with wires?
-the ansawer is CABLES, CABLES , CABLES everyone is connected with cables around the globe.checkout the website submarinecable.com .
+But wait, now you know how does data travels in this "network" thing, but what exactly is a computer network who are these connected with wires?
+the answer is CABLES, CABLES, CABLES everyone is connected with cables around the globe. Checkout the website submarinecable.com .
 Now lets talk about how this network is arranged there are basicly three type of network connection LAN, MAN and WAN , which are explained below:-
 ### Local Area Network(LAN)
-It is a computer network  that links devices within a building or group of adjacent buildings, especially one with a radius of less than 1 km. house is network(HAN) and personal area network(PAN) come under this category.
+It is a computer network  that links devices within a building or group of adjacent buildings, especially one with a radius of less than 1 km. House is network(HAN) and personal area network(PAN) come under this category.
  
 ### Metropolitan Area Network(MAN)
-A metropolitan area network (MAN) is a computer network that connects computers within a metropolitan area, which could be a single large city, multiple cities and towns, or   any given large area with multiple buildings. It generally ranges from 5 to 50 km.
+A metropolitan area network (MAN) is a computer network that connect computers within a metropolitan area, which could be a single large city, multiple cities and towns, or any given large area with multiple buildings. It generally ranges from 5 to 50 km.
 
 ### Wide Area Network(WAN)
-A wide area network ( WAN) is a telecommunications network that extends over a large geographical area for the primary purpose of computer networking.
+A wide area network ( WAN) is a telecommunication's network that extends over a large geographical area for the primary purpose of computer networking.
 A good example of wide area network is the airtel.
 And the internet is a collection of all these networks.
 However there is one special kind of network which we have not reviewed yet and it is called Virtual Private Network(VPN)
@@ -125,7 +126,7 @@ customers, partners, and other entities and connects them using dedicated connec
 
 ### Now , lets talk about network topologies before we jump into osi model:-
 
-Network Topology : Network topology specifies the layout of a computer network. Itshows how devices and cables are connected to each other.Types of Network Topology are as follows:-
+Network Topology : Network topology specifies the layout of a computer network. It shows how devices and cables are connected to each other. Types of Network Topology are as follows:-
 ### Bus :
 1. Bus topology is a network topology in which all the nodes are connected to a
 single cable known as a central cable or bus.
