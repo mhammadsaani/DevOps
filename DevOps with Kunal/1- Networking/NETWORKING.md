@@ -83,17 +83,17 @@ So there it is a simple overview of how your simple message in form of data is t
 You will learn more in detail when u will study network models like OSI model and TCP/IP model.
 
 
-But wait now u know how does data travels in this "network" thing but what exactly is a computer network who are these connected with wires?
-the ansawer is CABLES, CABLES , CABLES everyone is connected with cables around the globe.checkout the website submarinecable.com .
+But wait, now you know how does data travels in this "network" thing, but what exactly is a computer network who are these connected with wires?
+the answer is CABLES, CABLES, CABLES everyone is connected with cables around the globe. Checkout the website submarinecable.com .
 Now lets talk about how this network is arranged there are basicly three type of network connection LAN, MAN and WAN , which are explained below:-
 ### Local Area Network(LAN)
-It is a computer network  that links devices within a building or group of adjacent buildings, especially one with a radius of less than 1 km. house is network(HAN) and personal area network(PAN) come under this category.
+It is a computer network  that links devices within a building or group of adjacent buildings, especially one with a radius of less than 1 km. House is network(HAN) and personal area network(PAN) come under this category.
  
 ### Metropolitan Area Network(MAN)
-A metropolitan area network (MAN) is a computer network that connects computers within a metropolitan area, which could be a single large city, multiple cities and towns, or   any given large area with multiple buildings. It generally ranges from 5 to 50 km.
+A metropolitan area network (MAN) is a computer network that connect computers within a metropolitan area, which could be a single large city, multiple cities and towns, or any given large area with multiple buildings. It generally ranges from 5 to 50 km.
 
 ### Wide Area Network(WAN)
-A wide area network ( WAN) is a telecommunications network that extends over a large geographical area for the primary purpose of computer networking.
+A wide area network ( WAN) is a telecommunication's network that extends over a large geographical area for the primary purpose of computer networking.
 A good example of wide area network is the airtel.
 And the internet is a collection of all these networks.
 However there is one special kind of network which we have not reviewed yet and it is called Virtual Private Network(VPN)
@@ -126,7 +126,7 @@ customers, partners, and other entities and connects them using dedicated connec
 
 ### Now , lets talk about network topologies before we jump into osi model:-
 
-Network Topology : Network topology specifies the layout of a computer network. Itshows how devices and cables are connected to each other.Types of Network Topology are as follows:-
+Network Topology : Network topology specifies the layout of a computer network. It shows how devices and cables are connected to each other. Types of Network Topology are as follows:-
 ### Bus :
 1. Bus topology is a network topology in which all the nodes are connected to a
 single cable known as a central cable or bus.
