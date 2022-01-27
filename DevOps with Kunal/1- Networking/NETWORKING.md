@@ -174,9 +174,143 @@ mesh topology: In this topology, all the nodes are not connected to each other.
 It is a network architecture model based
 on the ISO standards. It is called the OSI model as it deals with connecting the systems
 that are open for communication with other systems. The OSI model has seven layers.
-The principles used to arrive at the seven layers can be summarized briefly as below:
+- Open Systems Interconnection Model, developed by International Organization for Standardization(ISO). 
+- It is a *reference model* for how applications communicate over the n/w. 
+- It is like a universal language for computer networking.
+- It consists of 7 layers and summarized briefly as below
+  1. Physical Layer
+  2. DataLink Layer
+  3. Network Layer
+  4. Transport Layer
+  5. Session Layer
+  6. Presentation Layer
+  7. Application Layer
+ 
+***Application Layer***
+ It is the top most layer in OSI model. It is a software layer which is implemented by n/w applications. These applications produce the data which has to be transferred over the n/w. And this layer serves as a window for those application services to access the network and for displaying the received information to the user. Also known as *Desktop Layer*
+  Eg: Browsers, Twitter and all similar applications
+
+***Presentation Layer***
+ It is also called as Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. 
+The functions of the presentation layer are 
+1. Translation: Converting our ascii data into interchangeable binary data(ASCII to EBCDIC).
+2. Encryption/ Decryption: Encrypts our data for abstraction. And Decrypts the encrypted data.
+3. Compression: Reduces the number of bits that need to be transmitted on the network.
+
+***Session Layer***
+ - It is responsible for the establishment of connection, maintenance of sessions, use and termination of connections authentication, authorizations and security. (*Session Establishment, Maintenance & Termination*)
+ - It enables two systems to start sending and receiving of data in half-duplex or full-duplex modes & followed by the termination of connected sessions. (*Dialog Controller*)
+-  It also avoids data loss by adding checkpoints called synchronization points into the data.. (*Synchronization*)
+
+***Transport Layer***
+- The data received from the Application layer through presentation and session layers is changed or divided into the small data units called Segments (Process is Segmentation). Responsible for end to end delivery of the complete message. And transport layer also provides the acknowledgement of successful data transmission and re-transmits the data if an error is found. 
+- At sender side, Transport layer receives the formatted & encrypted data from the upper layers, performs Segmentation and also implements Flow & Error Control to ensure proper data transmission. And for every segment, it will also add Source Portno, Destination Portno (Known or Default port of Receiver's app like 80 for web apps), Sequence Number in its header and forwards the segmented data to N/w layer.
+- At receivers side, TL reads the portnumber from its header and forwards the data to respective application. It also performs reassembling the segmented data based on sequence numbers.
+- So, Functions of TL are Segmentation & Reassembling, Service Point or Port Addressing (To deliver the messafe to correct app or process by port address in the header)
+- It provides both connection oriented and connection less services.
+- TL is operated by OS and it is a part of the OS that communicates with upper layers or Application layer by making system calls.
+- This also termed as Heart of OSI Model.
+
+**Network Layer**
+- The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet, from the number of routes available.
+-  The sender & receiver’s IP addresses are placed in the header by the network layer.
+-  Functions of the Network layer are Routing (The network layer protocols determine which route is suitable from source to destination) & Logical Addressing or IP addressing (In order to identify each device on internetwork uniquely, the network layer defines an addressing scheme. Through Ip addresses it can distinguish each device uniquely and universally.)
+-  Segments in N/w Layer is called as Packets(Segments encoded with n/w layer headers like adding source IP, Destination Ip )
+
+**Data Link Layer**
+- The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer.
+- The data unit in the DLL is a frame which can be accomplished by attaching special bit patterns to beginning and end of the frame. DLL also encapsulates Sender and Receiver’s MAC address in the header. 
+
+- Whenever a packet is transferred on the network based on the IP address it will find network and from there for delivering to the correct device it need a another unique address where MAC address comes to the picture.
+- The MAC address(12 digit alpha numeric) of a computer is the unique physical address of the network device, and it never changes. It is assigned with something based on where the computer is made and it exists for the lifetime of that network device.
+- But we can get a question like Why do we need a MAC address when we have a private IP address for each device assigned by routers using DHCP?
+Eg: Think of private Ip address as a shortcut on your computer. When a phone joins a network, it presents itself as d8:8n:v8 (example)Mac address, the DHCP server will then generate a private IP for it, or use one that's been reserved for that MAC (192.168.56.11 for example). So now when you communicate with 192.168.56.11, you're actually just communicating with d8:8n:v8 (Here Receiver’s MAC address is obtained by placing an ARP(Address Resolution Protocol) request onto the wire asking “Who has that IP address?” and the destination host will reply with its MAC address). Private IP addresses are not unique, MAC addresses are unique. 
+- Data Link Layer is divided into two sublayers called Logical Link Control (LLC) & Media Access Control (MAC).
+- Functions are 
+ 1. Framing (Provides a way for sender to transmit a set of bits to the receiver by adding special bit patterns to the beginning and end of the frames to identify their boundaries).
+ 2. Physical Addressing (After creating frames, the Data link layer adds physical addresses (MAC address) of the sender and/or receiver in the header of each frame. The DLL defines an addressing scheme called Physical addressing to identify device instead of n/w in logical addressing.)
+ 3. Error control: Data link layer provides the mechanism of error control in which it detects and retransmits damaged or lost frames.
+ 4. Flow Control: The data rate must be constant on both sides else the data may get corrupted thus, flow control coordinates the amount of data that can be sent before receiving acknowledgement.
+ 5. Access control: When a single communication channel is shared by multiple devices, the MAC sub-layer of the data link layer helps to determine which device has control over the channel at a given time.
+
+**Physical Layer**
+- The lowest layer responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.
+- Functions of the physical layer are 
+  Bit synchronization: It provides the synchronization of the bits by providing a clock. Determining the boundary (start and end) of signal cell is known as bit or clock synchronization. Used to make sure that the signals sent from one host of the communication can be rightly decoded by the receiver.
+  Bit rate control: It also defines the transmission rate i.e. the number of bits sent per second.
+  Physical topologies: It specifies the way in which the different, devices/nodes are arranged in a network i.e. bus, star, or mesh topology.
+  Transmission mode: It also defines the way in which the data flows between the two connected devices. The various transmission modes possible are Simplex, half-duplex and full-duplex.
+- Hub, Repeater, Modem, Cables are Physical Layer devices. 
+
+<h4 align="center">Application, Presentation & Session Layers are S/W layers. Transport Layer is Heart of OSI. N/W, Data Link & Physical Layers are H/w layers</h4>
+Data Will be transferred from Application to Application similar to the below.
+<p align="center"><img src="https://user-images.githubusercontent.com/70102577/151218840-02e1988d-680a-4a3a-bbb7-3d5ad27df80d.png" width=90% height=250px/></p>
+
+### ***TCP/IP Model*** 
+- Transmission Control Protocol/Internet Protocol.
+- The OSI Model is just a reference/logical model. It was designed to describe the functions of the communication system by dividing the communication procedure into smaller and simpler components.
+- Developed by ARPA Net(First internet n/w) in 1960s.
+- TCP/IP is concise version of OSI and contains 5 layers.
+1. Application Layer - User Interaction happens, It lies on the Devices
+2. Transport Layer - 
+3. Network Layer
+4. DataLink Layer
+5. Physical Layer
+
+### ***Client Server Architecture***
+<p align="center"><img src="https://user-images.githubusercontent.com/70102577/151224161-edb9d3b8-f661-453f-96c6-7824d9ec023b.png" width=90% height=250px/></p>
+- An application with this architecture has the client where the user interacts and a server to send the data to client when it is requested. Each client and server contains processes. These processes communicate with each other.
+- Server will high availablity and performance to serve the requests from the clients.
+- Clients will be interactive with the users and send requests to the server and serve the response from server to the client in an understandable and interactive way. 
+- Collection of servers are known as Data Centers.
+
+### ***Peer to Peer Architecture***
+- This architecture consists of a decentralized network of peers - nodes that are both clients and servers. P2P networks distribute the workload between peers, and all peers contribute and consume resources within the network without the need for a centralized server.
+- Eg: Bit Torrent downloads using P2P transfers
+
+### ***Network Devices***
+1. Repeater – A repeater operates at the physical layer. Its job is to regenerate the signal over the same network before the signal becomes too weak or corrupted so as to extend the length to which the signal can be transmitted over the same network. An important point to be noted about repeaters is that they do not amplify the signal. When the signal becomes weak, they copy the signal bit by bit and regenerate it at the original strength. It is a 2 port device. 
 
 
+2. Hub –  A hub is basically a multiport repeater. A hub connects multiple wires coming from different branches, for example, the connector in star topology which connects different stations. Hubs cannot filter data, so data packets are sent to all connected devices.  In other words, the collision domain of all hosts connected through Hub remains one.  Also, they do not have the intelligence to find out the best path for data packets which leads to inefficiencies and wastage. 
 
-	
-	
+*Types of Hub*
+a. Active Hub:- These are the hubs that have their own power supply and can clean, boost, and relay the signal along with the network. It serves both as a repeater as well as a wiring center. These are used to extend the maximum distance between nodes.
+
+b. Passive Hub :- These are the hubs that collect wiring from nodes and power supply from the active hub. These hubs relay signals onto the network without cleaning and boosting them and can’t be used to extend the distance between nodes.
+
+c. Intelligent Hub :- It works like active hubs and includes remote management capabilities. They also provide flexible data rates to network devices. It also enables an administrator to monitor the traffic passing through the hub and to configure each port in the hub.
+
+
+3. Bridge – A bridge operates at the data link layer. A bridge is a repeater, with add on the functionality of filtering content by reading the MAC addresses of source and destination. It is also used for interconnecting two LANs working on the same protocol. It has a single input and single output port, thus making it a 2 port device.
+
+*Types of Bridges*
+Transparent Bridges:- These are the bridge in which the stations are completely unaware of the bridge’s existence i.e. whether or not a bridge is added or deleted from the network, reconfiguration of the stations is unnecessary. These bridges make use of two processes i.e. bridge forwarding and bridge learning.
+Source Routing Bridges:- In these bridges, routing operation is performed by the source station and the frame specifies which route to follow. The host can discover the frame by sending a special frame called the discovery frame, which spreads through the entire network using all possible paths to the destination.
+
+4. Switch – A switch is a multiport bridge with a buffer and a design that can boost its efficiency(a large number of ports imply less traffic) and performance. A switch is a data link layer device. The switch can perform error checking before forwarding data, which makes it very efficient as it does not forward packets that have errors and forward good packets selectively to the correct port only.  In other words, the switch divides the collision domain of hosts, but broadcast domain remains the same. 
+  
+5. Routers – A router is a device like a switch that routes data packets based on their IP addresses. The router is mainly a Network Layer device. Routers normally connect LANs and WANs together and have a dynamically updating routing table based on which they make decisions on routing the data packets. Router divide broadcast domains of hosts connected through it.
+
+6. Gateway – A gateway, as the name suggests, is a passage to connect two networks together that may work upon different networking models. They basically work as the messenger agents that take data from one system, interpret it, and transfer it to another system. Gateways are also called protocol converters and can operate at any network layer. Gateways are generally more complex than switches or routers. Gateway is also called a protocol converter. 
+
+7. Brouter – It is also known as the bridging router is a device that combines features of both bridge and router. It can work either at the data link layer or a network layer. Working as a router, it is capable of routing packets across networks, and working as the bridge, it is capable of filtering local area network traffic. 
+
+8. NIC – NIC or network interface card is a network adapter that is used to connect the computer to the network. It is installed in the computer to establish a LAN.  It has a unique id that is written on the chip, and it has a connector to connect the cable to it. The cable acts as an interface between the computer and router or modem. NIC card is a layer 2 device which means that it works on both physical and data link layer of the network model. 
+<p align="center"><img src="https://user-images.githubusercontent.com/70102577/151415927-d5430a05-8a88-4973-b015-c66658a5d51b.png" width=90% height=250px/></p>
+
+### ***Protocols***
+A set of rules governing the transmission of data between devices Or The rules for the exchange of data are called Protocols.
+
+#### *Web Protocols*
+**TCP/IP Protocols**
+- HTTP
+- DHCP
+- FTP
+- SMTP
+- POP3 & IMAC
+- SSH
+- VNC
+
+- TELNET - Manage an account or device remotely. port 23
+- UDP - Stateless Connection less protocol
