@@ -302,7 +302,8 @@ Source Routing Bridges:- In these bridges, routing operation is performed by the
 ### ***Protocols***
 A set of rules governing the transmission of data between devices Or The rules for the exchange of data are called Protocols.
 
-#### *Web Protocols*
+***Web Protocols***
+
 **TCP/IP Protocols**
 - HTTP
 - DHCP
@@ -314,3 +315,28 @@ A set of rules governing the transmission of data between devices Or The rules f
 
 - TELNET - Manage an account or device remotely. port 23
 - UDP - Stateless Connection less protocol
+
+
+**_Ports_**
+
+- It tells us which application we are working with.
+- Port Numbers are 16-bit numbers. (2^16 = 65000 ports are available in a system)
+- Port Numbers are useful to identify the process or applications running on the device.
+
+- _Ephemeral Ports:_&nbsp; Ephemeral ports are communication endpoints of a transport layer protocol of TCP/IP & these are temporary or short-lived ports used for short period of time. After communication is terminated, the port becomes available for use in another session.
+
+- All the HTTP requests and responses are especially processed and transmitted on port 80.
+  0-1023 - Reserved Ports
+  1024-49152 - Application Ports
+  49153 - 65535 - Usable ports (Ephemeral)
+
+  1 mbps = 10,00,000 bits/s
+  1gbps = 10^9 bits/s
+  1kbps = 1000 bits/s
+
+**_Sockets_**
+
+- A socket is one endpoint of a two-way communication link between two programs running on the network.
+- They acts as interface to connect with two-way communication network and allows processes to communicate with each other.
+- Especially used in client-server applications that allow for communication between applications.
+- A socket is created by concatenating the IP number of a system and a software port number by which application to application communication is possible.
