@@ -300,7 +300,7 @@ Source Routing Bridges:- In these bridges, routing operation is performed by the
 <p align="center"><img src="https://user-images.githubusercontent.com/70102577/151415927-d5430a05-8a88-4973-b015-c66658a5d51b.png" width=90% height=250px/></p>
 
 
-**_Ports_**
+### **_Ports_**
 
 - It tells us which application we are working with.
 - Port Numbers are 16-bit numbers. (2^16 = 65000 ports are available in a system)
@@ -317,7 +317,7 @@ Source Routing Bridges:- In these bridges, routing operation is performed by the
   1gbps = 10^9 bits/s
   1kbps = 1000 bits/s
 
-**_Sockets_**
+### **_Sockets_**
 
 - A socket is one endpoint of a two-way communication link between two programs running on the network.
 - They acts as interface to connect with two-way communication network and allows processes to communicate with each other.
