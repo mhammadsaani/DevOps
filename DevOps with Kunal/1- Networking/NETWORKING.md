@@ -299,23 +299,6 @@ Source Routing Bridges:- In these bridges, routing operation is performed by the
 8. NIC – NIC or network interface card is a network adapter that is used to connect the computer to the network. It is installed in the computer to establish a LAN.  It has a unique id that is written on the chip, and it has a connector to connect the cable to it. The cable acts as an interface between the computer and router or modem. NIC card is a layer 2 device which means that it works on both physical and data link layer of the network model. 
 <p align="center"><img src="https://user-images.githubusercontent.com/70102577/151415927-d5430a05-8a88-4973-b015-c66658a5d51b.png" width=90% height=250px/></p>
 
-### ***Protocols***
-A set of rules governing the transmission of data between devices Or The rules for the exchange of data are called Protocols.
-
-***Web Protocols***
-
-**TCP/IP Protocols**
-- HTTP
-- DHCP
-- FTP
-- SMTP
-- POP3 & IMAC
-- SSH
-- VNC
-
-- TELNET - Manage an account or device remotely. port 23
-- UDP - Stateless Connection less protocol
-
 
 **_Ports_**
 
@@ -340,3 +323,19 @@ A set of rules governing the transmission of data between devices Or The rules f
 - They acts as interface to connect with two-way communication network and allows processes to communicate with each other.
 - Especially used in client-server applications that allow for communication between applications.
 - A socket is created by concatenating the IP number of a system and a software port number by which application to application communication is possible.
+
+### ***Protocols***
+A set of rules governing the transmission of data between devices Or The rules for the exchange of data are called Protocols.
+
+***Web Protocols***
+**TCP/IP Protocols**
+- HTTP
+- DHCP
+- FTP
+- SMTP
+- POP3 & IMAC
+- SSH
+- VNC
+
+- TELNET - Manage an account or device remotely. port 23
+- UDP - Stateless Connection less protocol
