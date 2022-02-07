@@ -144,3 +144,42 @@ Person1:
  -Name: Hammad
  <<: *likes
 ```
+
+#### Storing Data with Real Life Examples
+### With JSON
+
+```
+{
+  "school":[
+    {
+      "name":"DPS",
+      "principal":"Someone",
+      "Students":[
+        {
+          "rno":12,
+          "name":"Anyone",
+          "marks":67
+        }
+      ]
+    }
+  ]
+}
+```
+
+### With YAML
+
+```
+School:
+   - name: DPS
+   principal: Someone
+   Students:
+       -rno: 12
+       -name: Anyone
+       -marks: 67 
+```
+
+#### YAML DevOps Tools
+
+1. Datree
+2. Monokle by Kubeshop
+3. Lens
