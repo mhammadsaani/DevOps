@@ -87,7 +87,7 @@ ObjectTypeSimpleList: -Item1
   -Item3
 ```
 
-#### You want to display multiple line in your browser but you want your browser to treat it as a single line #Use ">"
+#### You want to display multiple lines in your browser but you want your browser to treat it as a single line ***Use*** ">"
 ```
 aboutInSingleLine: >-
   I am a CS student
@@ -100,7 +100,7 @@ aboutInSingleLine: >-
 about2: I am a CS student Currently Learning DevOps and Android Dev
 ```
 
-#### Remember Indentation (one space) is very important here
+#### Remember, Indentation (one space) is very important here
 ```
 aboutTwoMultipleLine: |-
   I am a CS student
@@ -108,7 +108,7 @@ aboutTwoMultipleLine: |-
   and Android Dev
 ```
 
-#### Single Key but have two Values
+#### Single Key, but have two Values
 ```
 pairExample: 
   - job: Student
@@ -144,3 +144,42 @@ Person1:
  -Name: Hammad
  <<: *likes
 ```
+
+#### Storing Data with Real Life Examples
+### With JSON
+
+```
+{
+  "school":[
+    {
+      "name":"DPS",
+      "principal":"Someone",
+      "Students":[
+        {
+          "rno":12,
+          "name":"Anyone",
+          "marks":67
+        }
+      ]
+    }
+  ]
+}
+```
+
+### With YAML
+
+```
+School:
+   - name: DPS
+   principal: Someone
+   Students:
+       -rno: 12
+       -name: Anyone
+       -marks: 67 
+```
+
+#### YAML DevOps Tools
+
+1. Datree
+2. Monokle by Kubeshop
+3. Lens
