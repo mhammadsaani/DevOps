@@ -339,3 +339,14 @@ A set of rules governing the transmission of data between devices Or The rules f
 
 - TELNET - Manage an account or device remotely. port 23
 - UDP - Stateless Connection less protocol
+
+***MiddleBoxes***
+- A middleBoxes is a networking devices that transforms, inspects, filter and manipulates traffic for purposes other than packet forwarding.
+**Types -**
+ **1. Firewall**
+- Firewall as you may have heard filter out 18 packets bases on various rules like Addresses, modifying packets, Port no., flags, protocols.
+- **Stateless Firewall** - Will not maintain state even if it sees the packets
+- **Statefull Firewall** - Wil maintain state after carefully watching state. It's in Network Layer and transport layer also.
+**2. Network Address Translation(NAT)**
+- NAT is a method of mapping an IP address space into another by modifying network address information in the IP header of packets while they are on transit across a traffic routing device.
+- IT modifies the IP to slow down the consumption of IP addresses.
