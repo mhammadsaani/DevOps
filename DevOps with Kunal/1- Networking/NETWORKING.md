@@ -39,7 +39,7 @@ This is used by ***World Wide Web***.
     we can go from one page to second, second to third and so on.
  
  With the following protocols, we have established a communication system. Computer send messages to one another. (These messages are made up of ones and zeros, bits). However, instead of sending the whole message (that could be more than trillion's of bits) at once, information/message is broken down into smaller units called ***Packets***
- Now, Packet is ready for sending and packet(smaller unit of message) has to be addressed to a certain application on a certain end system (Devices connected to Internet also called as Edge Systems like Mobile Phone, Desktop Computers etc). So, here comes the role of **Addressing**. 
+ Now, We have protocols and Packet is ready for sending. We need some sort of addressing via which packet(smaller unit of message) has to be sent to a certain application on a certain end system (Devices connected to Internet also called as Edge Systems like Mobile Phone, Desktop Computers etc). So, here comes the role of **Addressing**. 
  
  One more thing to mention here is ***Network Edge*** which is collection of end systems. Note, devices that relay messages like router are not part of Network Edge.
  
@@ -52,10 +52,7 @@ There can be multiple devices connected to the modem. Modem will provide IP addr
 using DHCP (Dynamic Host Configration Protocal). Each device can have lot of applications, so exactly which application is requesting the data is determined by ***PORTS***
 <h3 align="center"> IP addresses identify end systems but ports identify an application on the end system </h3>
  
- How we will get the searched file in laymans term. 
- Device Made a request, it will go to the router.
- 
- From ***Router --> Inter Service Provider --> Internet***
+
  
 Data needs to be transmitted from one end system to another over a medium. 
 There are two kinds of media
@@ -70,6 +67,10 @@ unguided media, such as radio waves.
 
 Now before we go further into technical details, lets review about data transmission over network and the network types
 how is data transfered?(a brief overview)
+Generally this happens when a Device Made a request. Request will go to the router.
+ 
+From ***Router --> Inter Service Provider --> Internet***
+
 >> When you send a WhatsApp message like "good morning" it is not sent as it is in one go in the vast ocean of internet, instead it happens in chunks.
 Your data is transferred into segments, packets and frames(you will learn more about it in detail ). Same thing happens when you load a webpage,
 individual calls are made for each "chunk" of data.
