@@ -21,13 +21,13 @@ Some common Protocols are
  - HTTP (HyperText Transfer Protocol)
  
  ### ***TCP***
- The Transmission Control Protocol is a protocol that ensures that **100%** of data reaches the intended destination and
+ The Transmission Control Protocol ensures that **100%** of data reaches the intended destination and
 is not corrupted along the way.
-So, if you want a person to get something completely, then you are going to use this protocol.
+So, if you want a person to get something completely, then the person must use this protocol.
  
  ### ***UDP*** 
- User Datagram Protocol (UDP) does not ensure that data reaches the destination, and that it remains incorrupt.
- When it doesn't matter whether **100%** data is reaching to the intended user, you use UDP like in case of **Video Conferencing**.
+ User Datagram Protocol (UDP) does not ensure that data reaches the destination, and that it remains incorrupt.It is said to be a unreliable transport protocol.
+ When it doesn't matter whether **100%** data is reaching to the intended user, we use UDP like in case of **Video Conferencing**.
  
  ### ***HTTP***
 HyperText Transfer Protocol (HTTP) is a web protocol that defines the
