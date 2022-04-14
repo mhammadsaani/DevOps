@@ -49,7 +49,7 @@ Address’ which is much like a mailing address, means a
 unique address of the modem (provided by your Internet service provider) called **Global IP** .
 You can check your computer *IP address* using ``` curl ifconfig.me -s ``` in your command line interface. 
 There can be multiple devices connected to the modem. Modem will provide IP address to each of the devices connected to that modem,
-using DHCP (Dynamic Host Configration Protocal). Each device can have lots of application, so exactly which application is requesting the data is determined by ***PORTS***
+using DHCP (Dynamic Host Configration Protocol). Each device can have lots of application, so exactly which application is requesting the data is determined by ***PORTS***
 <h3 align="center"> IP addresses identify end systems but ports identify an application on the end system </h3>
  
 
@@ -66,7 +66,7 @@ defined pathway is called guided, like Fibre Optics.
 unguided media, such as radio waves.
 
 Now before we go further into technical details, lets review about data transmission over network and the network types
-how is data transfered?(a brief overview)
+how is data transferred?(a brief overview)
 Generally, this happens when a Device makes a request. Request will go to the router.
  
 From ***Router --> Inter Service Provider --> Internet***
@@ -77,8 +77,8 @@ individual calls are made for each "chunk" of data.
 Every device that can be connected has an IP address. An IP address is in the form of X.X.X.X. each X can contain 0-255 no.s. this tells the internet, to where send and receive the data. Your "good morning" message will be sent to your friend only if the internet know which IP address
 he/she has. But wait? how does the internet knows which application to send to ? it is not like you send a whatsapp message and it has sent in
 your friend email,is it? for that there are port numbers, which tells which application this "good morning" message has to be sent.Ports are 16 bit
-no.s and some are already reserved. forexample:- port no. 80 is reserved for http.
-Now this is one final problem , the problem of sequence. when you send "good morning" why doesnt the data is tranfered as "morning gdoo", how
+no.s and some are already reserved. for example:- port no. 80 is reserved for http.
+Now this is one final problem , the problem of sequence. when you send "good morning" why doesn't the data is tranferred as "morning gdoo", how
 does the sequence of those data packets is maintained? the answer is sequence no.s. they maintain the sequence of those data packets to be transferred.
 So there it is a simple overview of how your simple message in form of data is transferred form one computer to another.
 You will learn more in detail when u will study network models like OSI model and TCP/IP model.
@@ -146,14 +146,14 @@ or more nodes and thus, forming a single continuous path for the transmission.
 ### Star :
 1. Star topology is a network topology in which all the nodes are connected to a single device known as a central device.
 2. Star topology requires more cable compared to other topologies.
-Therefore, it is more robust as a failure in one cable will only disconnect aspecific computer connected to this cable.
+Therefore, it is more robust as a failure in one cable will only disconnect a specific computer connected to this cable.
 3. If the central device is damaged, then the whole network fails.
-4. Star topology is very easy to install, manage and troubleshoot. It iscommonly used in office and home networks.
+4. Star topology is very easy to install, manage and troubleshoot. It is commonly used in office and home networks.
 ### Tree :
-1. Tree topology is a combination of star and bus topology. It is also known as theexpanded star topology.
+1. Tree topology is a combination of star and bus topology. It is also known as the expanded star topology.
 2. In tree topology, all the star networks are connected to a single bus.
 3. Ethernet protocol is used in this topology.
-4. In this, the whole network is divided into segments known as star networks whichcan be easily maintained. If one segment is damaged, there is no effect on othersegments.
+4. In this, the whole network is divided into segments known as star networks which can be easily maintained. If one segment is damaged, there is no effect on other segments.
 5. Tree topology depends on the "main bus," and if it breaks, then the whole network gets damaged.
 ### Mesh :
 1. Mesh topology is a network topology in which all the nodes are individually connected to other nodes.
@@ -207,7 +207,7 @@ The functions of the presentation layer are
 - The data received from the Application layer through presentation and session layers is changed or divided into the small data units called Segments (Process is Segmentation). Responsible for end to end delivery of the complete message. And transport layer also provides the acknowledgement of successful data transmission and re-transmits the data if an error is found. 
 - At sender side, Transport layer receives the formatted & encrypted data from the upper layers, performs Segmentation and also implements Flow & Error Control to ensure proper data transmission. And for every segment, it will also add Source Portno, Destination Portno (Known or Default port of Receiver's app like 80 for web apps), Sequence Number in its header and forwards the segmented data to N/w layer.
 - At receivers side, TL reads the portnumber from its header and forwards the data to respective application. It also performs reassembling the segmented data based on sequence numbers.
-- So, Functions of TL are Segmentation & Reassembling, Service Point or Port Addressing (To deliver the messafe to correct app or process by port address in the header)
+- So, Functions of TL are Segmentation & Reassembling, Service Point or Port Addressing (To deliver the message to correct app or process by port address in the header)
 - It provides both connection oriented and connection less services.
 - TL is operated by OS and it is a part of the OS that communicates with upper layers or Application layer by making system calls.
 - This also termed as Heart of OSI Model.
@@ -261,7 +261,7 @@ Data Will be transferred from Application to Application similar to the below.
 ### ***Client Server Architecture***
 <p align="center"><img src="https://user-images.githubusercontent.com/70102577/151224161-edb9d3b8-f661-453f-96c6-7824d9ec023b.png" width=90% height=250px/></p>
 - An application with this architecture has the client where the user interacts and a server to send the data to client when it is requested. Each client and server contains processes. These processes communicate with each other.
-- Server will high availablity and performance to serve the requests from the clients.
+- Server will high availability and performance to serve the requests from the clients.
 - Clients will be interactive with the users and send requests to the server and serve the response from server to the client in an understandable and interactive way. 
 - Collection of servers are known as Data Centers.
 
@@ -347,7 +347,7 @@ A set of rules governing the transmission of data between devices Or The rules f
  **1. Firewall**
 - Firewall as you may have heard filter out 18 packets bases on various rules like Addresses, modifying packets, Port no., flags, protocols.
 - **Stateless Firewall** - Will not maintain state even if it sees the packets
-- **Statefull Firewall** - Wil maintain state after carefully watching state. It's in Network Layer and transport layer also.
+- **Stateful Firewall** - Will maintain state after carefully watching state. It's in Network Layer and transport layer also.
 **2. Network Address Translation(NAT)**
 - NAT is a method of mapping an IP address space into another by modifying network address information in the IP header of packets while they are on transit across a traffic routing device.
 - IT modifies the IP to slow down the consumption of IP addresses.
