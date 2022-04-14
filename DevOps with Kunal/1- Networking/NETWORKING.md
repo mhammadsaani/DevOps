@@ -49,7 +49,7 @@ Address’ which is much like a mailing address, means a
 unique address of the modem (provided by your Internet service provider) called **Global IP** .
 You can check your computer *IP address* using ``` curl ifconfig.me -s ``` in your command line interface. 
 There can be multiple devices connected to the modem. Modem will provide IP address to each of the devices connected to that modem,
-using DHCP (Dynamic Host Configration Protocal). Each device can have lot of applications, so exactly which application is requesting the data is determined by ***PORTS***
+using DHCP (Dynamic Host Configration Protocal). Each device can have lots of application, so exactly which application is requesting the data is determined by ***PORTS***
 <h3 align="center"> IP addresses identify end systems but ports identify an application on the end system </h3>
  
 
@@ -67,7 +67,7 @@ unguided media, such as radio waves.
 
 Now before we go further into technical details, lets review about data transmission over network and the network types
 how is data transfered?(a brief overview)
-Generally this happens when a Device Made a request. Request will go to the router.
+Generally, this happens when a Device makes a request. Request will go to the router.
  
 From ***Router --> Inter Service Provider --> Internet***
 
